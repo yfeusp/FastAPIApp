@@ -50,6 +50,12 @@ FastAPIApp/
 
    The API will be available at `http://localhost:8000`.
 
+5. **Run the tests**
+
+   ```bash
+   pytest tests/ -v
+   ```
+
 ## API Endpoints
 
 | Method | Path      | Description                                              |
