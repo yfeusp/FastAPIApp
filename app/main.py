@@ -22,3 +22,14 @@ def health():
         "hostname": socket.gethostname(),
         "timestamp": datetime.now(timezone.utc).isoformat(),
     }
+
+
+@app.get("/info")
+def info():
+    """Static info endpoint to test deployment."""
+    return {
+        "message": "Welcome to FastAPI on Kubernetes!",
+        "author": "Yusdanis",
+        "app_name": "FastAPIApp",
+        "version": "1.0.0"
+    }
